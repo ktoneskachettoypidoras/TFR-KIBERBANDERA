@@ -1,0 +1,27 @@
+﻿###########################
+# UIA events
+###########################
+
+country_event = {
+    id = uia_exile.1
+    title = uia_exile_title
+    desc = uia_exile_desc
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = uia_exile_option
+
+        switch_tag = UIA
+
+        UIA = {
+            set_country_flag = uia_exile_government
+            clr_country_flag = capitulated
+            add_political_power = 200
+            set_war_support = 0.6
+            add_stability = 0.1
+        }
+    }
+}
+

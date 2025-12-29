@@ -1,0 +1,206 @@
+
+	defined_text = {
+		name = start_menu_country_desc
+		
+		text = { 
+			trigger = {
+				tag = USA
+			}
+			localization_key = "USA_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = GER
+			}
+			localization_key = "GER_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = SOV
+			}
+			localization_key = "SOV_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = FRA
+			}
+			localization_key = "FRA_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = PRC
+			}
+			localization_key = "PRC_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = JAP
+			}
+			localization_key = "JAP_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = SYR
+			}
+			localization_key = "SYR_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = TRA
+			}
+			localization_key = "TRA_country_summary"
+		}
+	}
+	
+	defined_text = {
+		name = start_menu_country_paths
+		
+		text = { 
+			trigger = {
+				tag = USA
+			}
+			localization_key = "USA_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = GER
+			}
+			localization_key = "GER_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = SOV
+			}
+			localization_key = "SOV_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = FRA
+			}
+			localization_key = "FRA_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = PRC
+			}
+			localization_key = "PRC_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = JAP
+			}
+			localization_key = "JAP_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = SYR
+			}
+			localization_key = "SYR_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = TRA
+			}
+			localization_key = "TRA_country_paths"
+		}
+	}
+	
+	defined_text = {
+		name = start_menu_country_other
+		
+		text = { 
+			trigger = {
+				tag = USA
+			}
+			localization_key = "USA_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = GER
+			}
+			localization_key = "GER_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = SOV
+			}
+			localization_key = "SOV_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = FRA
+			}
+			localization_key = "FRA_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = PRC
+			}
+			localization_key = "PRC_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = JAP
+			}
+			localization_key = "JAP_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = TRA
+			}
+			localization_key = "TRA_country_other"
+		}
+	}	
+	
+	defined_text = {
+		name = GET_BACKGROUND
+		
+		text = { 
+			trigger = {
+				tag = SOV
+			}
+			localization_key = "GFX_Moscow_BG"
+		}	
+		text = { 
+			trigger = {
+				tag = FRA
+			}
+			localization_key = "GFX_France_BG"
+		}	
+		text = { 
+			trigger = {
+				tag = USA
+			}
+			localization_key = "GFX_USA_BG"
+		}
+		text = { 
+			trigger = {
+				tag = GER
+			}
+			localization_key = "GFX_GER_BG"
+		}
+		text = { 
+			trigger = {
+				tag = JAP
+			}
+			localization_key = "GFX_Japan_BG"
+		}
+		text = { 
+			trigger = {
+				tag = PRC
+			}
+			localization_key = "GFX_China_BG"
+		}
+		text = { 
+			trigger = {
+				tag = TRA
+			}
+			localization_key = "GFX_Nistrenia_BG"
+		}
+		text = {
+			trigger = {
+				NOT = { tag = SOV tag = USA tag = FRA tag = JAP tag = PRC tag = GER tag = TRA }
+			}
+			localization_key = "GFX_World_Map_BG"
+		}
+	}

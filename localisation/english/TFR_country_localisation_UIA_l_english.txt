@@ -1,0 +1,92 @@
+﻿l_english:
+ #Events
+
+ uia.1.t:0 "But What Else Is There?"
+ uia.1.d:0 "In a secluded park in the Holosiivskyi District in Kyiv, during a dark blue-ish evening, 3 men sat on a bench discussing the recent events.\n\n\"Mykola why do you keep perusing a free Ukraine?\" \"Why do you not, we are Ukrainians and what language are we talking in right now? We are talking in the same language those Katsaps want to destroy!\" \"But Mykola how many times have we fought for a free Ukraine, we have never won and we never will win, how many Ukrainians need to die before you understand that we can live peacefully with the Russi...\"  (Mykola Interrupts abruptly) \"You think we can trust the moskal horde! do you not remember your service back in '14 and '15 where you fought in Illoviask and that damned Airport for 242 days!\"\n\n\"Who was it that betrayed you? Do you not remember the katsaps and those sucker separatists who made us believe we were in a agreement? How many Ukrainians died fighting for freedom and only died due to our pure incompetence of us believing the moskals for a single second, we tried to peruse peace but they only did it to destroy us even more!\" (Finally Bohdan speaks up.) \"Oh Mykola was it not our goal also to destroy those katsaps too? Remember Denys? Only god knows where he is now, he is either dead or will be soon enough! He also fought for a free Ukraine but look where he is now!\" Do you not remember the sacred line \"The Majestic death of the heroes of the Ukrainian nation and the thousands not known to us\" Bohdan? (Mykola gets angrier and angrier with Bohdan and Andriy for not believing the same idea they fought for.)\n\n\"Oh Andriy why do you give up on our ideas do you really want to believe the fake nation of the damned Moskals who have only massacred our women and children and desecrated our men?\" \"Mykola will you never understand that millions of Ukrainians have died fighting for our freedom? We lost the war in the Donbas and now the whole of Europe lost also trying to protect us! The Russians say God is with them so what can we do?\" (Mykola shouts at Andriy and Bohdan.) \"Do you not read the scripture? Do you not remember why we lost? We only lost due to ourselves not to the damned katsaps! Our Leadership has been the mistake they only steal and steal and think about their holiday in Bali or the Maldives! Now is the time to show the Ukrainian people that we are made of steel and will never falter! It is time for us to gather again on Maidan and reclaim our nation. We will destroy anything in the path of a free Ukraine!\""
+ uia.1.a:0 "Ukraine or Death!"
+
+ UIA_fascism:0 "Ukrainian Insurgent Army"
+ UIA_fascism_DEF:0 "the Ukrainian Insurgent Army"
+ UIA_fascism_ADJ:0 "Ukrainian"
+ 
+ #Focus Tree
+ 
+ #Decision Categories
+ TRA_sovet_category: "Supreme Soviet of the PMR"
+ TRA_sovet_category_desc: "\n\n\n\n\n£GFX_TRA_supreme_council_banner\n\n\n\n\n\n\n\n§YThe Supreme Soviet§! is the parliament of Nistrenia, the highest representative and the only legislative body of the state power of the PMR. Through the adoption of legislative acts, the Supreme Soviet of the PMR reviews and approves national programs for economic, social, and cultural development, resolves issues of the country's administrative-territorial structure, and ratifies and denounces international treaties.\n\n\n\n\n\n\n\n\n"
+ 
+ ##Decisions
+ TRA_utilize_the_church_authority: "Use the Authority of the §YChurch§!"
+ TRA_buy_nistrenian_campaign: "Conduct an Agitation Campaign for §YBuy [TRA.GetFlag]Nistrenian§! Products!"
+ #
+ ##Tooltips
+ #SOV_stability_secured_tt: "Дерево §GДипломатии§! Будет §YОткрыто§!"
+ #
+ ##Country flags
+ #SOV_slutsky_reforms_complete_flag: "Был сделан либо §YОбеспечить Русскую Демократию§!, либо §YПопечение Партии§!"
+ #
+ ###Ministers
+ ##SOV_Ivashov: "Леонид Ивашов"
+ 
+ #Ideas
+ TRA_eternal_fortress: "Eternal Fortress"
+ TRA_eternal_fortress_desc: "The eternal fortress holds NATO in a vice..."
+ TRA_fighting_legacy: "Fighting Legacy"
+ TRA_fighting_legacy_desc: " "
+ TRA_kolbasna: "Weapons From Kolbasna"
+ TRA_kolbasna_desc: " "
+ TRA_lebed_legacy: "Lebed's Legacy"
+ TRA_lebed_legacy_desc: " "
+ TRA_national_reconstruction_initiative: "National Reconstruction Initiative"
+ TRA_national_reconstruction_initiative_desc: " "
+ TRA_our_little_game: "Our Little Game"
+ TRA_our_little_game_desc: " "
+ TRA_police_expansion: "Police Expansion"
+ TRA_police_expansion_desc: " "
+ TRA_pridnestrovian_truth: "Pridnestrovian Truth"
+ TRA_pridnestrovian_truth_desc: " "
+ TRA_safe_city: "Safe City"
+ TRA_safe_city_desc: " "
+ TRA_the_only_empire_we_get: "The Only Empire We Have"
+ TRA_the_only_empire_we_get_desc: " "
+
+ 
+ ##Parties
+ #SOV_totalitarian_socialist_long:0 "Коммунисты России"
+ #SOV_totalitarian_socialist_short:0 "Коммунисты России"
+ #
+ #Scripted Loc
+ TRA_GATHERING_STORM_DESC: "The PMR (Pridnestrovian Moldavian Republic) declared independence from Moldova on September 2, 1990, after the deputies of the Supreme Soviet of the Moldavian SSR declared the sovereignty of the Moldavian SSR in June 1990. Following an armed conflict in 1992, the PMR fully separated from Moldova. Moldova did not recognize the PMR's secession and considers this territory occupied by the Russian Federation."
+ SOV_putin_resigns_flag: "Vladimir Putin Resigned"
+ SOV_putin_death_flag: "Vladimir Putin Has Died"
+
+ #
+ ##Leader desc
+ #SOV_VLADIMIR_PUTIN_DESC:0 "Владимир Владимирович Путин пробирался к власти не по типичной лестнице, ведущей к власти, а по тайным лестницам и закоулкам разведывательного сообщества. Он начал свою карьеру в рядах КГБ, проведя последнее десятилетие существования Советского Союза, помогая Штази в Восточной Германии. Когда Союз распался, он занялся политикой в недавно переименованном городе Санкт-Петербурге и увидел стремительный взлет во время правления Бориса Ельцина. Он получил поддержку Ельцина на выборах 2000 года и легко набрал большинство голосов. С тех пор он не покидал Кремль.На протяжении последних двух десятилетий Путин оставался у власти благодаря сочетанию народной поддержки, конституционных лазеек и тщательного контроля над оппозицией. Когда в 2008 году он достиг предела в два срока подряд, его бывший премьер-министр и близкий союзник Дмитрий Медведев был президентом на один срок, в то время как Путин сам стал премьер-министром. Затем Путин вернулся на президентский пост в 2012 году. За время своей администрации он пережил множество кризисов, от борьбы с чеченскими партизанами до поддержки пророссийских повстанческих государств на востоке Украины, и каждый раз выходил из них сильнее.\n\nНа значительная часть российской общественности искренне наслаждается правлением Путина, видя в нем человека, который вывел их из бурной эпохи Ельцина и помог восстановить положение России среди мировых держав. Но не вся его поддержка является органичной. Его последующие выборы сопровождались обвинениями в фальсификации результатов голосования, а антиправительственные протесты сопровождались жесткими репрессиями. Лидеры оппозиции внутри страны и за рубежом, как правило, подвергаются слежке, преследованиям, арестам или умирают при подозрительных обстоятельствах. Все это посылает один четкий сигнал: Владимир Путин считает, что у него есть народный мандат на правление, и он не планирует отказываться от него в ближайшее время."
+ #
+ ##Variables
+ #SOV_navalny_protest_strength: "Сила Протеста"
+ #
+ ##Flags
+ #SOV_programme_in_progress: "Программа Модернизации в Стадии Реализации"
+ #
+ ##Threats
+ #
+ #
+ ##Traits
+ #hos_little_puppet_master: "Малый Кукловод"
+ #
+ ##Modifiers
+ #SOV_uss_socialist: "§tСоциалистическая Администрация§!"
+ #
+ ##Cities
+ #
+ ##Balance of power (balance on my credit card 0)
+ #
+ ##MIO#
+ #
+ ##Army Generals Tooltips
+ #barkashov_1_stats_tp: "£GFX_attack_texticon §RНавык Атаки§!: §Y2§!\n£GFX_defence_texticon §YНавык Защиты§!: §Y1§!\n£GFX_planning_trait_texticon §GНавык Планирования§!: §Y2§!\n£GFX_logistics_texticon §CНавык Логистики§!: §Y2§!\n\n"
+ #
+ ##Sub-Sub Ideologies
+ 

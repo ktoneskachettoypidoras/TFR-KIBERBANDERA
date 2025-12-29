@@ -1,0 +1,19 @@
+	spriteTypes = { 
+		
+		SpriteType = {
+			name = "GFX_Sheriff_BG"
+			texturefile = "gfx/interface/sheriff_background.png"			
+		}
+		SpriteType = {
+			name = "GFX_Sheriff_BG_2"
+			texturefile = "gfx/interface/sheriff_background_2.png"		
+		}
+		SpriteType = {
+			name = "GFX_Sheriff_BG_3"
+			texturefile = "gfx/interface/sheriff_background_3.png"			
+		}	
+		SpriteType = {
+			name = "GFX_Sheriff_BG_4"
+			texturefile = "gfx/interface/sheriff_background_4.png"			
+		}
+	}		

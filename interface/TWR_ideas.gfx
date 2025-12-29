@@ -1,0 +1,42 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_TRA_eternal_fortress"
+		texturefile = "gfx/interface/ideas/TRA/TRA_eternal_fortress.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TRA_fighting_legacy"
+		texturefile = "gfx/interface/ideas/TRA/TRA_fighting_legacy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TRA_kolbasna"
+		texturefile = "gfx/interface/ideas/TRA/TRA_kolbasna.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TRA_lebed_legacy"
+		texturefile = "gfx/interface/ideas/TRA/TRA_lebed_legacy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TRA_national_reconstruction_initiative"
+		texturefile = "gfx/interface/ideas/TRA/TRA_national_reconstruction_initiative.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TRA_our_little_game"
+		texturefile = "gfx/interface/ideas/TRA/TRA_our_little_game.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TRA_police_expansion"
+		texturefile = "gfx/interface/ideas/TRA/TRA_police_expansion.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TRA_pridnestrovian_truth"
+		texturefile = "gfx/interface/ideas/TRA/TRA_pridnestrovian_truth.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TRA_safe_city"
+		texturefile = "gfx/interface/ideas/TRA/TRA_safe_city.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TRA_the_only_empire_we_get"
+		texturefile = "gfx/interface/ideas/TRA/TRA_the_only_empire_we_get.png"
+	}
+}

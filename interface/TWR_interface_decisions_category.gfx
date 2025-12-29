@@ -1,0 +1,7 @@
+spriteTypes = {
+	#TRA
+	spriteType = {
+			name = "GFX_decision_category_TRA_supreme_council"   
+			texturefile = "gfx/interface/decisions/TRA/TRA_supreme_council.png"
+	}
+}

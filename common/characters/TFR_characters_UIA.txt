@@ -1,0 +1,8 @@
+characters = {
+    UIA_hrytsak = {
+        name = UIA_HRYTSAK
+        portrait_path = "gfx/leaders/UIA/UIA_hrytsak.dds"
+        ideology = fascism
+        leader = yes
+    }
+}

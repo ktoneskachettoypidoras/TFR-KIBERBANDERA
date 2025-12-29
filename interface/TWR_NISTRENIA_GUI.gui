@@ -1,0 +1,51 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TWR_TRA_sheriff_info_container"
+		clipping = no
+		position = { x = 5 y = 0 }
+		
+		iconType = {
+			name = "Sheriff_BG" 
+			position = { x = 0 y = -135 }
+			spriteType = "GFX_Sheriff_BG"
+		}
+		
+		iconType = {
+			name = "Sheriff_BG_2" 
+			position = { x = 0 y = -135 }
+			spriteType = "GFX_Sheriff_BG_2"
+		}
+		
+		iconType = {
+			name = "Sheriff_BG_3" 
+			position = { x = 0 y = -135 }
+			spriteType = "GFX_Sheriff_BG_3"
+		}	
+		
+		iconType = {
+			name = "Sheriff_BG_4" 
+			position = { x = 0 y = -135 }
+			spriteType = "GFX_Sheriff_BG_4"
+		}
+		
+		instantTextboxType = {
+			name = "TWR_TRA_sheriff_info_text"
+			position = { x = 5%% y = -135 }
+			maxWidth = 470
+			maxHeight = 300
+			font = "VCR02_12"
+			text = "TRA_sheriff_info_text"
+			pdx_tooltip = "TRA_sheriff_info_tooltip_name"
+			pdx_tooltip_delayed = "TRA_sheriff_info_tooltip"
+		}
+		
+		iconType = {
+			name = "TWR_TRA_sheriff_info_text_2"
+			position = { x = 5%% y = -135 }
+			spriteType = "GFX_konata_dance"
+			maxWidth = 350
+			maxHeight = 500
+			format = left
+		}
+	}
+}

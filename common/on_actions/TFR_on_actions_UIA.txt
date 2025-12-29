@@ -1,0 +1,11 @@
+on_capitulation = {
+    effect = {
+        if = {
+            limit = {
+                capitulated_tag = UKR
+                is_player = yes
+            }
+            country_event = { id = uia_exile.1 }
+        }
+    }
+}

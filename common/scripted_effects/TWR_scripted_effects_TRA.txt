@@ -1,0 +1,27 @@
+
+ TRA_add_sheriff_approval_rating = {
+ 	custom_effect_tooltip = TRA_add_sheriff_approval_rating_tooltip
+ 	add_to_variable = {
+ 		var = TRA_sheriff_approval_rating_var
+ 		value = TRA_sheriff_approval_rating_var_temp
+ 	}
+ 	multiply_temp_variable = {
+ 		var = TRA_sheriff_approval_rating_var_temp
+ 		value = 0.2
+ 	}
+ 	add_to_variable = {
+ 		var = TRA_sheriff_support_dynamic_var
+ 		value = TRA_sheriff_approval_rating_var_temp
+ 	}
+ 	clamp_variable = {
+ 		var = TRA_sheriff_approval_rating_var
+ 		min = 0
+ 		max = 1
+ 	}
+ 	clamp_variable = {
+ 		var = TRA_sheriff_support_dynamic_var
+ 		min = 0
+ 		max = 1
+ 	}
+ }
+ 

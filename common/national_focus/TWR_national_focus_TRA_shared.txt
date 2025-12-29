@@ -1,0 +1,1547 @@
+focus_tree = {
+	id = TRA_Starting_Focus_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TRA
+		}
+	}
+	default = no
+	shared_focus = TRA_thirty_years_of_life
+	shared_focus = TRA_national_protests
+}
+		
+		shared_focus = {
+			id = TRA_thirty_years_of_life
+			icon = GFX_focus_TRA_thirty_years_of_life
+			cost = 2.2
+			ai_will_do = { factor = 5 }
+			x = 8
+			y = 0
+	
+			available = {
+				
+			}
+	
+			prerequisite = {	
+				
+			}
+			completion_reward = {
+				country_event = {
+					id = nistrenia.0
+				}
+				add_political_power = 50
+				hidden_effect = {
+					scoped_play_song = "ddt"
+				}
+			}
+			
+		}
+	
+		shared_focus = {
+			id = TRA_he_who_made_us_strong
+			icon = GFX_focus_TRA_he_who_made_us_strong
+			cost = 4.4
+			relative_position_id = TRA_thirty_years_of_life
+			x = -1
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_thirty_years_of_life }
+			completion_reward = {
+				add_political_power = 50
+				country_event = { id = nistrenia.1 }
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_he_who_saved_us_all
+			icon = GFX_focus_TRA_he_who_saved_us_all
+			cost = 4.4
+			relative_position_id = TRA_thirty_years_of_life
+			x = 1
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_thirty_years_of_life }
+			completion_reward = {
+				add_political_power = 50
+				country_event = { id = nistrenia.8 }
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_a_strict_talk
+			icon = GFX_focus_TRA_a_strict_talk
+			relative_position_id = TRA_he_who_made_us_strong
+			x = -2
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_he_who_made_us_strong }
+			prerequisite = { focus = TRA_he_who_saved_us_all }
+			completion_reward = {
+				add_political_power = 15
+				add_popularity = {
+						ideology = market_liberal
+						popularity = 0.05
+				}
+				
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_welcome_external_investments
+			icon = GFX_focus_TRA_welcome_external_investments
+			relative_position_id = TRA_a_strict_talk
+			mutually_exclusive = {focus = TRA_increase_tax_incentives}
+			x = -2
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			available = {
+				NOT = { has_country_flag = buffet_burned_down_flag }
+			}
+			prerequisite = { focus = TRA_a_strict_talk }
+			select_effect = { 
+				country_event = { id = nistrenia.7 days = 3 }
+			}
+			completion_reward = {
+				add_political_power = -25
+				set_temp_variable = {
+				var = income_var_temp
+				value = 0.1
+				}
+				add_income_with_inflation = yes
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_increase_tax_incentives
+			icon = GFX_focus_TRA_increase_tax_incentives
+			relative_position_id = TRA_a_strict_talk
+			mutually_exclusive = {focus = TRA_welcome_external_investments}
+			x = 0
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_a_strict_talk }
+			select_effect = { 
+				country_event = { id = nistrenia.7 days = 3 }
+			}
+			completion_reward = {
+				add_political_power = 50
+				set_temp_variable = {
+				var = income_var_temp
+				value = -0.01
+				}
+				add_income_with_inflation = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.01
+				}
+				add_industrial_development = yes
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_connection_with_our_homeland
+			icon = GFX_focus_TRA_connection_with_our_homeland
+			relative_position_id = TRA_he_who_made_us_strong
+			x = 4
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_he_who_made_us_strong }
+			prerequisite = { focus = TRA_he_who_saved_us_all }
+			completion_reward = {
+				army_experience = 15
+				add_war_support = 0.05
+				add_popularity = {
+						ideology = authoritarian_democrat
+						popularity = 0.05
+				}
+				
+			}
+		}
+					
+		shared_focus = {
+			id = TRA_inspection_from_above
+			icon = GFX_focus_TRA_inspection_from_above
+			relative_position_id = TRA_connection_with_our_homeland
+			x = 2
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_connection_with_our_homeland }
+			completion_reward = {
+				army_experience = 15
+				add_war_support = 0.05
+				add_popularity = {
+						ideology = authoritarian_democrat
+						popularity = 0.05
+				}
+				
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_the_stream_must_go_on
+			icon = GFX_focus_TRA_the_stream_must_go_on
+			relative_position_id = TRA_inspection_from_above
+			x = 1
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_inspection_from_above }
+			completion_reward = {
+				army_experience = 15
+				add_war_support = 0.05
+				add_popularity = {
+						ideology = authoritarian_democrat
+						popularity = 0.05
+				}
+				
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_it_is_still_free
+			icon = GFX_focus_TRA_it_is_still_free
+			relative_position_id = TRA_the_stream_must_go_on
+			x = 1
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_the_stream_must_go_on }
+			completion_reward = {
+				army_experience = 15
+				add_war_support = 0.05
+				add_popularity = {
+						ideology = authoritarian_democrat
+						popularity = 0.05
+				}
+				
+			}
+		}
+
+		
+		shared_focus = {
+			id = TRA_returning_the_traitor
+			icon = GFX_focus_TRA_returning_the_traitor
+			relative_position_id = TRA_connection_with_our_homeland
+			x = 0
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_connection_with_our_homeland }
+			completion_reward = {
+				army_experience = 15
+				add_war_support = 0.05
+				add_popularity = {
+						ideology = authoritarian_democrat
+						popularity = 0.05
+				}
+				
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_ties_of_honor
+			icon = GFX_focus_TRA_ties_of_honor
+			relative_position_id = TRA_returning_the_traitor
+			x = 0
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_returning_the_traitor }
+			completion_reward = {
+				army_experience = 15
+				add_war_support = 0.05
+				add_popularity = {
+						ideology = authoritarian_democrat
+						popularity = 0.05
+				}
+				
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_new_round_of_negotiations
+			icon = GFX_focus_TRA_new_round_of_negotiations
+			relative_position_id = TRA_ties_of_honor
+			x = 1
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_ties_of_honor }
+			completion_reward = {
+				country_event = { id = nistrenia.3 }
+				add_ideas = TRA_our_little_game
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_buy_nistrenian_products
+			icon = GFX_focus_TRA_buy_nistrenian_products
+			relative_position_id = TRA_a_strict_talk
+			x = 0
+			y = 2
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_welcome_external_investments focus = TRA_increase_tax_incentives  }
+			completion_reward = {
+				add_political_power = 15
+				set_temp_variable = {
+				var = income_var_temp
+				value = 0.06
+				}
+				add_income_with_inflation = yes
+				set_temp_variable = {
+					var = society_development_var_temp
+					value = 0.01
+				}
+				add_society_development = yes
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_economic_report
+			icon = GFX_focus_TRA_economic_report
+			relative_position_id = TRA_buy_nistrenian_products
+			x = -1
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_buy_nistrenian_products }
+			completion_reward = {
+				country_event = { id = nistrenia.2 }
+				set_temp_variable = {
+				var = income_var_temp
+				value = -0.02
+				}
+				add_income_with_inflation = yes
+				add_political_power = -25
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_our_political_renewal
+			icon = GFX_focus_TRA_our_political_renewal
+			relative_position_id = TRA_he_who_made_us_strong
+			x = 1
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		   		
+			prerequisite = { focus = TRA_he_who_made_us_strong }
+			prerequisite = { focus = TRA_he_who_saved_us_all }
+			completion_reward = {
+				add_stability = 0.05
+				country_event = { id = nistrenia.9 }
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_dealing_with_covid
+			icon = GFX_focus_TRA_dealing_with_covid
+			relative_position_id = TRA_safe_city
+			x = 0
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		   
+			available = {
+					date > 2020.02.01
+			}			
+			prerequisite = { focus = TRA_safe_city }
+			completion_reward = {
+				add_stability = 0.05
+				increase_welfare = yes
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_unbreakable_ties
+			icon = GFX_focus_TRA_unbreakable_ties
+			relative_position_id = TRA_new_round_of_negotiations
+			x = 0
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_new_round_of_negotiations }
+			completion_reward = {
+				add_political_power = 25
+				add_popularity = {
+						ideology = communist
+						popularity = 0.05
+				}
+				set_temp_variable = {
+				var = income_var_temp
+				value = 0.005
+				}
+				add_income_with_inflation = yes
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_desperate_calls
+			icon = GFX_focus_TRA_desperate_calls
+			relative_position_id = TRA_new_round_of_negotiations
+			x = 2
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_new_round_of_negotiations }
+			prerequisite = { focus = TRA_it_is_still_free }
+			completion_reward = {
+				add_war_support = -0.05
+				add_manpower = 139
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 83 producer = TRA }
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_young_politicians
+			icon = GFX_focus_TRA_young_politicians
+			relative_position_id = TRA_our_political_renewal
+			x = -1
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_our_political_renewal }
+			completion_reward = {
+				increase_police = yes
+				add_ideas = TRA_safe_city
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_ecological_situation
+			icon = GFX_focus_TRA_ecological_situation
+			relative_position_id = TRA_our_political_renewal
+			x = 1
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_our_political_renewal }
+			completion_reward = {
+				increase_police = yes
+				add_ideas = TRA_safe_city
+			}
+		}
+				
+		shared_focus = {
+			id = TRA_safe_city
+			icon = GFX_focus_TRA_safe_city
+			relative_position_id = TRA_young_politicians
+			x = 1
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_young_politicians }
+			prerequisite = { focus = TRA_ecological_situation }
+			completion_reward = {
+				increase_police = yes
+				add_ideas = TRA_safe_city
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_extended_authority
+			icon = GFX_focus_TRA_extended_authority
+			relative_position_id = TRA_dealing_with_covid
+			x = 0
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_dealing_with_covid }
+			completion_reward = {
+				increase_police = yes
+				add_ideas = TRA_kolbasna
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_communication_in_the_country
+			icon = GFX_focus_TRA_communication_in_the_country
+			relative_position_id = TRA_economic_report
+			x = 0
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_economic_report }
+			completion_reward = {
+				add_political_power = 25
+				add_stability = 0.05
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_economical_decisions
+			icon = GFX_focus_TRA_economical_decisions
+			relative_position_id = TRA_economic_report
+			x = -2
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_economic_report }
+			completion_reward = {
+				upgrade_economy_law = yes
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_red_guard
+			icon = GFX_focus_TRA_red_guard
+			relative_position_id = TRA_economical_decisions
+			x = 3
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_economical_decisions }
+			prerequisite = { focus = TRA_communication_in_the_country }
+			completion_reward = {
+				add_popularity = {
+					ideology = communist
+					popularity = 0.05
+				}
+				add_manpower = 312
+				add_war_support = 0.05
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_dreams_of_the_past
+			icon = GFX_focus_TRA_dreams_of_the_past
+			relative_position_id = TRA_desperate_calls
+			x = -3
+			y = 1
+			cost = 4.4
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_desperate_calls }
+			prerequisite = { focus = TRA_unbreakable_ties }
+			completion_reward = {
+				add_war_support = 0.05
+				add_political_power = 15
+				add_manpower = 32
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = fascist
+					popularity = 0.05
+				}
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_final_journey
+			icon = GFX_focus_TRA_final_journey
+			relative_position_id = TRA_extended_authority
+			x = 0
+			y = 2
+			cost = 0.2
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}	
+			available = {
+				OR = {
+					#SOV = {has_country_flag = SOV_putin_resigns_flag}
+					SOV = {has_country_flag = SOV_putin_death_flag}
+				}
+			}			
+			prerequisite = { focus = TRA_extended_authority }
+			prerequisite = { focus = TRA_red_guard }
+			prerequisite = { focus = TRA_dreams_of_the_past }
+			completion_reward = {
+				country_event = { id = nistrenia.4 }
+			}
+		}
+		
+		
+###PROTESTS###
+
+focus_tree = {
+	id = TRA_Protests_Focus_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TRA
+		}
+	}
+	default = no
+	shared_focus = TRA_thirty_years_of_life
+	shared_focus = TRA_national_protests
+}
+		
+		shared_focus = {
+			id = TRA_national_protests
+			icon = GFX_focus_TRA_national_protests
+
+			x = 28
+			y = 0
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}
+			available = {
+				OR = {
+					#SOV = {has_country_flag = SOV_putin_resigns_flag}
+					SOV = {has_country_flag = SOV_putin_death_flag}
+				}
+			}			    
+			
+			completion_reward = {
+				add_stability = -0.15
+				add_war_support = -0.15
+				add_political_power = -150
+				random_owned_controlled_state = {
+					remove_building = {
+						type = infrastructure
+						level = 1
+					}
+				}
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_time_to_speak
+			icon = GFX_focus_TRA_time_to_speak
+			relative_position_id = TRA_national_protests
+			x = 0
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_national_protests }
+			completion_reward = {
+				add_stability = 0.05
+				country_event = { id = nistrenia.5 }
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_our_future_victories
+			icon = GFX_focus_TRA_our_future_victories
+			relative_position_id = TRA_time_to_speak
+			x = 0
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_time_to_speak }
+			completion_reward = {
+				add_political_power = 50
+				add_stability = 0.01
+				add_ideas = TRA_pridnestrovian_truth
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_imperial_splendor
+			icon = GFX_focus_TRA_imperial_splendor
+			relative_position_id = TRA_our_future_victories
+			x = -1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_our_future_victories }
+			completion_reward = {
+				add_war_support = 0.05
+				army_experience = 15
+				add_manpower = 431
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = fascist
+					popularity = 0.05
+				}
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_slaves_of_god
+			icon = GFX_focus_TRA_slaves_of_god
+			relative_position_id = TRA_imperial_splendor
+			x = -1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_imperial_splendor }
+			completion_reward = {
+			add_war_support = 0.03
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = fascist
+					popularity = 0.05
+				}
+			IF = {
+				LIMIT = {
+						has_idea = highest_conscription
+					}
+					add_political_power = 100
+				}
+				ELSE_IF = {
+					LIMIT = {
+						has_idea = lowest_conscription
+					}
+					swap_ideas = {
+						add_idea = lower_conscription
+						remove_idea = lowest_conscription
+					}
+				}
+				ELSE_IF = {
+					LIMIT = {
+						has_idea = lower_conscription
+					}
+					swap_ideas = {
+						add_idea = low_conscription
+						remove_idea = lower_conscription
+					}
+				}
+				ELSE_IF = {
+					LIMIT = {
+						has_idea = low_conscription
+					}
+					swap_ideas = {
+						add_idea = medium_conscription
+						remove_idea = low_conscription
+					}
+				}
+				ELSE_IF = {
+					LIMIT = {
+						has_idea = medium_conscription
+					}
+					swap_ideas = {
+						add_idea = high_conscription
+						remove_idea = medium_conscription
+					}
+				}
+				ELSE_IF = {
+					LIMIT = {
+						has_idea = high_conscription
+					}
+					swap_ideas = {
+						add_idea = higher_conscription
+						remove_idea = high_conscription
+					}
+				}
+				ELSE_IF = {
+					LIMIT = {
+						has_idea = higher_conscription
+					}
+					swap_ideas = {
+						add_idea = highest_conscription
+						remove_idea = higher_conscription
+					}
+				}
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_communist_duty
+			icon = GFX_focus_TRA_communist_duty
+			relative_position_id = TRA_our_future_victories
+			x = 1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_our_future_victories }
+			completion_reward = {
+				add_war_support = 0.03
+				add_manpower = 1871
+				add_popularity = {
+					ideology = communist
+					popularity = 0.05
+				}
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_hidden_within
+			icon = GFX_focus_TRA_hidden_within
+			relative_position_id = TRA_communist_duty
+			x = 1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_communist_duty }
+			completion_reward = {
+				add_popularity = {
+					ideology = communist
+					popularity = 0.05
+				}
+				add_political_power = 150
+				increase_safety = yes
+			}
+		}
+
+		
+		shared_focus = {
+			id = TRA_eyes_of_justice
+			icon = GFX_focus_TRA_eyes_of_justice
+			relative_position_id = TRA_slaves_of_god
+			x = 2
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_slaves_of_god }
+			prerequisite = { focus = TRA_hidden_within }
+			completion_reward = {
+				increase_police = yes
+				add_ideas = TRA_safe_city
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_guardians_of_motherland
+			icon = GFX_focus_TRA_guardians_of_motherland
+			relative_position_id = TRA_eyes_of_justice
+			x = -1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_eyes_of_justice }
+			completion_reward = {
+				add_ideas = TRA_police_expansion
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_sacred_oath
+			icon = GFX_focus_TRA_sacred_oath
+			relative_position_id = TRA_guardians_of_motherland
+			x = -1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_guardians_of_motherland }
+			completion_reward = {
+				increase_police = yes
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_guns_for_citizens
+			icon = GFX_focus_TRA_guns_for_citizens
+			relative_position_id = TRA_eyes_of_justice
+			x = 1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_eyes_of_justice }
+			completion_reward = {
+				increase_training = yes
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_our_leader
+			icon = GFX_focus_TRA_our_leader
+			relative_position_id = TRA_guns_for_citizens
+			x = 1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_guns_for_citizens }
+			completion_reward = {
+				increase_training = yes
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_our_final_referendum
+			icon = GFX_focus_TRA_our_final_referendum
+			relative_position_id = TRA_guardians_of_motherland
+			x = 1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}
+			available = {
+					date > 2026.06.01
+			}		    
+			prerequisite = { focus = TRA_guardians_of_motherland }
+			prerequisite = { focus = TRA_guns_for_citizens }
+			completion_reward = {
+				add_political_power = 150
+				add_stability = 0.1
+				add_war_support = 0.1
+				add_manpower = 3172
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_cold_cold_winter
+			icon = GFX_focus_TRA_cold_cold_winter
+			relative_position_id = TRA_time_to_speak
+			x = -5
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_time_to_speak }
+			completion_reward = {
+				add_political_power = -50
+				add_stability = -0.05
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = power_plant
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_reconstruction_initiative
+			icon = GFX_focus_TRA_reconstruction_initiative
+			relative_position_id = TRA_cold_cold_winter
+			x = -4
+			y = 2
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_cold_cold_winter }
+			completion_reward = {
+				add_ideas = TRA_national_reconstruction_initiative
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_sheriff_expansion
+			icon = GFX_focus_TRA_sheriff_expansion
+			relative_position_id = TRA_cold_cold_winter
+			x = 0
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_cold_cold_winter }
+			completion_reward = {
+			add_popularity = {
+						ideology = market_liberal
+						popularity = 0.05
+				}
+				set_temp_variable = {
+				var = income_var_temp
+				value = 0.05
+				}
+				add_income_with_inflation = yes
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = office_park
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = office_park
+						level = 1
+						instant_build = yes
+					}
+				}
+				upgrade_economy_law = yes
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_guarding_sheriff
+			icon = GFX_focus_TRA_guarding_sheriff
+			relative_position_id = TRA_sheriff_expansion
+			x = 0
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_sheriff_expansion }
+			completion_reward = {
+				add_manpower = -391
+				add_stability = 0.05
+				add_political_power = 35
+				add_popularity = {
+						ideology = market_liberal
+						popularity = 0.05
+				}
+				set_temp_variable = {
+				var = income_var_temp
+				value = 0.05
+				}
+				add_income_with_inflation = yes
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_cutting_ties
+			icon = GFX_focus_TRA_cutting_ties
+			relative_position_id = TRA_reconstruction_initiative
+			mutually_exclusive = {focus = TRA_light_of_greatness}
+			x = 1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}	
+			available = {
+					date > 2026.01.01
+			}				
+			prerequisite = { focus = TRA_reconstruction_initiative }
+			prerequisite = { focus = TRA_guarding_sheriff }
+			completion_reward = {
+				add_political_power = 150
+				add_popularity = {
+						ideology = market_liberal
+						popularity = -0.25
+				}
+				remove_ideas = TRA_sheriff_monopoly
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_light_of_greatness
+			icon = GFX_focus_TRA_light_of_greatness
+			relative_position_id = TRA_reconstruction_initiative
+			mutually_exclusive = {focus = TRA_cutting_ties}
+			x = 3
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}
+			available = {
+					date > 2026.01.01
+			}		    
+			prerequisite = { focus = TRA_reconstruction_initiative }
+			prerequisite = { focus = TRA_guarding_sheriff }
+			completion_reward = {
+				add_popularity = {
+						ideology = market_liberal
+						popularity = 0.15
+				}
+				set_temp_variable = {
+					var = income_var_temp
+					value = 0.05
+				}
+				add_income_with_inflation = yes
+				add_ideas = TRA_the_only_empire_we_get
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_officer_assembly
+			icon = GFX_focus_TRA_officer_assembly
+			relative_position_id = TRA_time_to_speak
+			x = 5
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_time_to_speak }
+			completion_reward = {
+				add_command_power = 150
+				army_experience = 15
+				add_tech_bonus = {bonus = 0.25 uses = 1 category = engineers_tech}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_eternal_fortress
+			icon = GFX_focus_TRA_eternal_fortress
+			relative_position_id = TRA_officer_assembly
+			x = 0
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_officer_assembly }
+			completion_reward = {
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_tech_bonus = {bonus = 0.25 uses = 1 category = engineers_tech}
+			add_ideas = TRA_eternal_fortress
+
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_ready_to_fight
+			icon = GFX_focus_TRA_ready_to_fight
+			relative_position_id = TRA_eternal_fortress
+			x = 0
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_eternal_fortress }
+			completion_reward = {
+				add_manpower = 532
+				army_experience = 5
+				add_command_power = 15
+				add_tech_bonus = {bonus = 0.25 uses = 1 category = infantry_tech}
+				add_doctrine_cost_reduction = {cost_reduction = 0.25 uses = 1 category = land_doctrine}
+				add_tech_bonus = {bonus = 0.15 uses = 1 category = support_tech}
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 119 producer = TRA }
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_our_angel_protector
+			icon = GFX_focus_TRA_our_angel_protector
+			relative_position_id = TRA_ready_to_fight
+			x = -1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_ready_to_fight }
+			completion_reward = {
+				add_manpower = 532
+				army_experience = 5
+				add_command_power = 15
+				add_tech_bonus = {bonus = 0.25 uses = 1 category = infantry_tech}
+				add_doctrine_cost_reduction = {cost_reduction = 0.25 uses = 1 category = land_doctrine}
+				add_tech_bonus = {bonus = 0.15 uses = 1 category = support_tech}
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 119 producer = TRA }
+			}
+		}
+		
+		
+		shared_focus = {
+			id = TRA_scorpion_strike
+			icon = GFX_focus_TRA_scorpion_strike
+			relative_position_id = TRA_officer_assembly
+			x = 3
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_officer_assembly }
+			completion_reward = {
+				add_tech_bonus = {bonus = 0.25 uses = 1 category = infantry_weapons}
+				add_tech_bonus = {bonus = 0.25 uses = 1 category = para_tech}
+				add_tech_bonus = {bonus = 0.25 uses = 1 category = support_tech}
+				add_war_support = 0.05
+				army_experience = 15
+				add_manpower = 86
+				add_command_power = 15
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 83 producer = TRA }
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_fall_from_the_sky
+			icon = GFX_focus_TRA_fall_from_the_sky
+			relative_position_id = TRA_scorpion_strike
+			x = -1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_scorpion_strike }
+			completion_reward = {
+				add_tech_bonus = {bonus = 0.25 uses = 1 category = infantry_tech}
+				add_tech_bonus = {bonus = 0.25 uses = 1 category = para_tech}
+				air_experience = 50
+				add_equipment_to_stockpile = {
+					type = medium_plane_airframe_1
+					variant_name = "Tenryu Type"
+					amount = 2
+					producer = TRA
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_marching_forever
+			icon = GFX_focus_TRA_marching_forever
+			relative_position_id = TRA_scorpion_strike
+			x = 1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_scorpion_strike }
+			completion_reward = {
+				add_war_support = 0.05
+				add_command_power = 100
+				army_experience = 15
+				add_manpower = 462
+				add_tech_bonus = {bonus = 0.25 uses = 1 category = infantry_tech}
+				add_tech_bonus = {bonus = 0.25 uses = 1 category = support_tech}
+				add_doctrine_cost_reduction = {cost_reduction = 0.5 uses = 1 category = land_doctrine}
+				
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_women_conscription
+			icon = GFX_focus_TRA_women_conscription
+			relative_position_id = TRA_marching_forever
+			x = 1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_marching_forever }
+			completion_reward = {
+				add_stability = -0.03
+				add_manpower = 1284
+				increase_female_service = yes
+				increase_female = yes
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_marching_on
+			icon = GFX_focus_TRA_marching_on
+			relative_position_id = TRA_ready_to_fight
+			x = 2
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_ready_to_fight }
+			prerequisite = { focus = TRA_fall_from_the_sky }
+			prerequisite = { focus = TRA_marching_forever }
+			completion_reward = {
+				add_ideas = TRA_fighting_legacy
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_operation_black_swan
+			icon = GFX_focus_TRA_operation_black_swan
+			relative_position_id = TRA_marching_on
+			x = 0
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_marching_on }
+			completion_reward = {
+				add_war_support = 0.05
+				army_experience = 15
+				add_command_power = 100
+				add_manpower = 981
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 92 producer = TRA }
+				add_timed_idea = { idea = TRA_black_swan_operation days = 120}
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_eternal_brotherhood
+			icon = GFX_focus_TRA_eternal_brotherhood
+			relative_position_id = TRA_operation_black_swan
+			x = 0
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_operation_black_swan }
+			completion_reward = {
+				add_war_support = 0.1
+				army_experience = 50
+				add_command_power = 150
+				add_manpower = 2832
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 232 producer = TRA }
+				add_doctrine_cost_reduction = {cost_reduction = 0.5 uses = 1 category = land_doctrine}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Militseyskaya Brigada\" division_template = \"Militseyskaya Brigada\" start_experience_factor = 1.0 start_equipment_factor = 1.0" 
+						owner = TRA	
+					}
+				}
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_guardian_legacy
+			icon = GFX_focus_TRA_guardian_legacy
+			relative_position_id = TRA_officer_assembly
+			x = 6
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_officer_assembly }
+			completion_reward = {
+				add_ideas = TRA_lebed_legacy
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_cossack_will
+			icon = GFX_focus_TRA_cossack_will
+			relative_position_id = TRA_guardian_legacy
+			x = 1
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_guardian_legacy }
+			completion_reward = {
+				add_war_support = 0.05
+				army_experience = 25
+				add_manpower = 421
+				add_command_power = 25
+				add_doctrine_cost_reduction = {cost_reduction = 0.5 uses = 1 category = land_doctrine}
+				add_tech_bonus = {bonus = 0.25 uses = 1 category = infantry_tech}
+			}
+		}
+		
+		shared_focus = {
+			id = TRA_they_shall_hear_our_song
+			icon = GFX_focus_TRA_they_shall_hear_our_song
+			relative_position_id = TRA_cossack_will
+			x = 0
+			y = 1
+			cost = 8
+			cancel_if_invalid = yes
+			ai_will_do = {
+				factor = 5
+			}		    
+			prerequisite = { focus = TRA_cossack_will }
+			completion_reward = {
+				add_war_support = 0.05
+				add_manpower = 2143
+				add_command_power = 25
+				army_experience = 15
+				add_doctrine_cost_reduction = {cost_reduction = 0.5 uses = 1 category = land_doctrine}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Militseyskaya Brigada\" division_template = \"Militseyskaya Brigada\" start_experience_factor = 1.0 start_equipment_factor = 0.75" 
+						owner = TRA	
+					}
+				}
+			}
+		}
+		

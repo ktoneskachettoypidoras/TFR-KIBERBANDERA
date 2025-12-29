@@ -1,0 +1,176 @@
+
+	defined_text = {
+		name = TRA_sheriff_text
+		
+		text = { 
+			trigger = {
+				TRA = {
+					has_completed_focus = TRA_adapt_to_chinese_socialism
+				}
+			}
+			localization_key = "TRA_peoples_entrepreneurs_influence"
+		}
+		text = { 
+			trigger = {
+				TRA = {
+					has_completed_focus = TRA_developed_socialism
+				}
+			}
+			localization_key = "TRA_red_directors_influence"
+		}
+		text = { 
+			trigger = {
+				TRA = {
+					has_country_flag = TRA_navalny_oligarchs_enabled_flag
+				}
+			}
+			localization_key = "TRA_new_oligarchs_influence"
+		}
+		text = {
+			trigger = {
+				TRA = {
+					NOT = {
+						has_country_flag = TRA_medve_oligarchs_disabled
+						has_completed_focus = TRA_developed_socialism
+						has_completed_focus = TRA_adapt_to_chinese_socialism
+						has_completed_focus = TRA_nothing_but_bloodsucking_parasites
+						has_country_flag = TRA_navalny_oligarchs_enabled_flag
+					}
+				}
+			}
+			localization_key = "TRA_usual_sheriff_influence"
+		}
+		text = {
+			trigger = {
+				TRA = {
+					OR = {
+						has_country_flag = TRA_medve_oligarchs_disabled
+						has_completed_focus = TRA_nothing_but_bloodsucking_parasites
+					}
+				}
+			}
+			localization_key = ""
+		}
+	}
+	
+	defined_text = {
+		name = TRA_sheriff_tooltip_name
+		
+		text = { 
+			trigger = {
+				TRA = {
+					has_completed_focus = TRA_adapt_to_chinese_socialism
+				}
+			}
+			localization_key = "TRA_peoples_entrepreneurs_info_tooltip"
+		}
+		text = { 
+			trigger = {
+				TRA = {
+					has_completed_focus = TRA_developed_socialism
+				}
+			}
+			localization_key = "TRA_red_directors_info_tooltip"
+		}
+		text = { 
+			trigger = {
+				TRA = {
+					has_country_flag = TRA_navalny_oligarchs_enabled_flag
+				}
+			}
+			localization_key = "TRA_new_oligarchs_info_tooltip"
+		}
+		text = {
+			trigger = {
+				TRA = {
+					NOT  = {
+						has_country_flag = TRA_medve_oligarchs_disabled
+						has_completed_focus = TRA_developed_socialism
+						has_completed_focus = TRA_adapt_to_chinese_socialism
+					}
+				}
+			}
+			localization_key = "TRA_usual_sheriff_info_tooltip"
+		}
+	}
+	
+	defined_text = {
+		name = TRA_sheriff_tooltip_gui
+		
+		text = { 
+			trigger = {
+				TRA = {
+					has_completed_focus = TRA_adapt_to_chinese_socialism
+				}
+			}
+			localization_key = "TRA_peoples_entrepreneurs_info"
+		}
+		text = { 
+			trigger = {
+				TRA = {
+					has_completed_focus = TRA_developed_socialism
+				}
+			}
+			localization_key = "TRA_red_directors_info"
+		}
+		text = { 
+			trigger = {
+				TRA = {
+					has_country_flag = TRA_navalny_oligarchs_enabled_flag
+				}
+			}
+			localization_key = "TRA_new_oligarchs_info"
+		}
+		text = {
+			trigger = {
+				TRA = {
+					NOT  = {
+						has_country_flag = TRA_medve_oligarchs_disabled
+						has_completed_focus = TRA_developed_socialism
+						has_completed_focus = TRA_adapt_to_chinese_socialism
+					}
+				}
+			}
+			localization_key = "TRA_usual_sheriff_info"
+		}
+	}
+	
+	defined_text = {
+		name = TRA_sheriff_influence_monthly
+
+		text = { 
+			trigger = {
+				TRA = {
+					has_completed_focus = TRA_adapt_to_chinese_socialism
+				}
+			}
+			localization_key = "TRA_peoples_entrepreneurs_influence_monthly"
+		}
+		text = { 
+			trigger = {
+				TRA = {
+					has_completed_focus = TRA_developed_socialism
+				}
+			}
+			localization_key = "TRA_red_directors_influence_monthly"
+		}	
+		text = { 
+			trigger = {
+				TRA = {
+					has_country_flag = TRA_navalny_oligarchs_enabled_flag
+				}
+			}
+			localization_key = "TRA_new_oligarchs_influence_monthly"
+		}
+		text = { 
+			trigger = {
+				TRA = {
+					NOT = {
+						has_completed_focus = TRA_developed_socialism
+						has_completed_focus = TRA_adapt_to_chinese_socialism
+					}
+				}
+			}
+			localization_key = "TRA_usual_sheriff_influence_monthly"
+		}
+	}

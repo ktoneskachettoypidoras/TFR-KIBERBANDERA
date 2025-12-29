@@ -1,0 +1,42 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_TRA_smirnov_who_made_us_strong"     
+		texturefile = "gfx/event_pictures/TRA_smirnov_who_made_us_strong.png"    
+	}
+	SpriteType = {
+		name = "GFX_TRA_martynov_economic_report"
+		texturefile = "gfx/event_pictures/TRA_martynov_economic_report.png"
+	}
+	SpriteType = {
+		name = "GFX_TRA_martynov_new_round_of_negotiations"
+		texturefile = "gfx/event_pictures/TRA_martynov_new_round_of_negotiations.png"
+	}
+	SpriteType = {
+		name = "GFX_TRA_putin_last_journey"
+		texturefile = "gfx/event_pictures/TRA_putin_last_journey.png"
+	}
+	SpriteType = {
+		name = "GFX_TRA_krasnoselsky_time_to_speak"
+		texturefile = "gfx/event_pictures/TRA_krasnoselsky_time_to_speak.png"
+	}
+	SpriteType = {
+		name = "GFX_TRA_krasnoselsky_time_to_speak_2"
+		texturefile = "gfx/event_pictures/TRA_krasnoselsky_time_to_speak_2.png"
+	}
+	SpriteType = {
+		name = "GFX_TRA_buffet_burns_down"
+		texturefile = "gfx/event_pictures/TRA_buffet_burns_down.png"
+	}
+	SpriteType = {
+		name = "GFX_TRA_intro_picture"
+		texturefile = "gfx/event_pictures/TRA_intro_picture.png"
+	}
+	SpriteType = {
+		name = "GFX_TRA_lebed_he_who_saved_us_all"
+		texturefile = "gfx/event_pictures/TRA_lebed_he_who_saved_us_all.png"
+	}
+	SpriteType = {
+		name = "GFX_TRA_obnovlenie_our_political_renewal"
+		texturefile = "gfx/event_pictures/TRA_obnovlenie_our_political_renewal.png"
+	}
+}

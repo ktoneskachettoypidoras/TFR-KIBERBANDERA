@@ -1,0 +1,43 @@
+	scripted_gui = {
+		TWR_TRA_sheriff_info = {
+			context_type = decision_category
+			window_name = "TWR_TRA_sheriff_info_container"
+			properties = {
+			}
+			triggers = {
+				TWR_TRA_sheriff_info_text_visible = {
+					NOT = {
+						has_completed_focus = TRA_nothing_but_bloodsucking_parasites
+						has_country_flag = TRA_medve_sheriffs_disabled
+					}
+				}
+				TWR_TRA_sheriff_info_text_2_visible = {
+					OR = {
+						has_completed_focus = TRA_nothing_but_bloodsucking_parasites
+						has_country_flag = TRA_medve_sheriffs_disabled
+					}
+				}
+				Sheriff_BG_4_visible = {
+					OR = {
+						has_country_flag = TRA_navalny_sheriffs_enabled_flag
+					}
+				}
+				Sheriff_BG_3_visible = {
+					OR = {
+						has_completed_focus = TRA_triumph_of_zhirinovsky
+					}
+				}
+				Sheriff_BG_2_visible = {
+					OR = {
+						has_completed_focus = TRA_election_victory
+					}
+				}
+				Sheriff_BG_visible = {
+					NOT = {
+						has_completed_focus = TRA_election_victory
+						has_completed_focus = TRA_triumph_of_zhirinovsky
+					}
+				}
+			}
+		}
+	}

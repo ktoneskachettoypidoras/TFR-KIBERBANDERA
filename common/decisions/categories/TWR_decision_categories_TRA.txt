@@ -1,0 +1,26 @@
+	TRA_sovet_category = {
+		icon = GFX_decision_category_TRA_supreme_council
+		#picture = GFX_decision_cat_SOV_duma_decision_picture 
+		visible_when_empty = yes
+		scripted_gui = TWR_TRA_sheriff_info
+		allowed = {
+			tag = TRA
+		}	
+		priority = {
+			base = 10
+			modifier = {
+				add = -5
+				has_completed_focus = SOV_recognize_donbas
+			}
+		}
+		visible = {
+			tag = TRA
+			#NOT = {
+			#	OR = {
+			#		has_completed_focus = SOV_29th_soviet_congress
+			#		has_completed_focus = SOV_triumph_of_zhirinovsky
+			#		has_country_flag = SOV_grand_constitutional_reformation_flag
+			#	}
+			#}
+		}
+	}

@@ -1,0 +1,81 @@
+	TRA_sovet_category = {
+		TRA_utilize_the_church_authority = {
+			visible = {
+				tag = TRA
+			}
+			#available = {
+			#	custom_trigger_tooltip = {
+			#		tooltip = SOV_idea_roc_tt
+			#		OR = {
+			#			has_idea = SOV_Russian_Orthodox_Church
+			#			has_idea = SOV_Russian_Orthodox_Church2
+			#			has_idea = SOV_Russian_Orthodox_Church3
+			#		}
+			#	}
+			#}
+			icon = GFX_SOV_decision_draw_support_from_church
+			fire_only_once = no
+			days_remove = 70
+			days_re_enable = 70
+			modifier = {
+				stability_weekly = 0.001
+				political_power_factor = -0.1
+				personal_value_factor = 0.1
+				personal_expense_factor = 0.025
+			}
+			complete_effect = {
+			}
+			remove_effect = {
+				add_stability = 0.05
+				set_temp_variable = {
+					var = society_development_var_temp
+					value = 0.01
+				}
+				add_society_development = yes
+			}
+			cost = 50
+		}
+		
+		
+		TRA_buy_nistrenian_campaign = {
+			visible = {
+				tag = TRA
+			}
+			available = {
+				#custom_trigger_tooltip = {
+				#	tooltip = SOV_idea_roc_tt
+				#	OR = {
+				#		has_idea = SOV_Russian_Orthodox_Church
+				#		has_idea = SOV_Russian_Orthodox_Church2
+				#		has_idea = SOV_Russian_Orthodox_Church3
+				#	}
+				#}
+			}
+			icon = GFX_SOV_decision_draw_support_from_church
+			fire_only_once = no
+			days_remove = 70
+			days_re_enable = 70
+			modifier = {
+				stability_weekly = 0.001
+				political_power_factor = -0.1
+				personal_value_factor = 0.1
+				personal_expense_factor = 0.025
+			}
+			complete_effect = {
+			}
+			remove_effect = {
+				add_stability = 0.05
+				set_temp_variable = {
+					var = income_var_temp
+					value = 0.05
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = society_development_var_temp
+					value = 0.01
+				}
+				add_society_development = yes
+			}
+			cost = 50
+		}
+	}

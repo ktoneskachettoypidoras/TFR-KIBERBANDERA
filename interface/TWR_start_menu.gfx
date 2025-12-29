@@ -1,0 +1,9 @@
+	spriteTypes = { 
+		
+		SpriteType = { 
+			name = "GFX_Nistrenia_BG"
+			texturefile = "gfx/interface/Nistrenia.png"
+			alwaystransparent = yes
+		}
+
+	}

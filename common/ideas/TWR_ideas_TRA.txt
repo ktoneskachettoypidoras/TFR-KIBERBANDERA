@@ -1,0 +1,255 @@
+	ideas = {
+		country = {
+			TRA_eternal_fortress = {
+				picture = TRA_eternal_fortress
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					land_bunker_effectiveness_factor = 0.15
+					#production_speed_land_bunker_factor = 0.15
+					dig_in_speed = 3
+					max_dig_in = 5
+				}
+			}
+			TRA_fighting_legacy = {
+				picture = TRA_fighting_legacy
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				targeted_modifier = {
+					tag = MOL
+					attack_bonus_against = 0.05
+					defense_bonus_against = 0.05
+				}
+				
+				modifier = {
+					war_support_factor = 0.1
+					special_forces_cap = 0.1
+					command_power_gain = 0.05
+					coordination_bonus = 0.05
+					dig_in_speed = 3
+					max_dig_in = 3
+					max_planning = 0.15
+				}
+			}
+			TRA_kolbasna = {
+				picture = TRA_kolbasna
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					supply_factor = 0.1
+					supply_consumption_factor = -0.1
+					attrition = -0.15
+					unit_upkeep_attrition_factor = -0.1
+				}
+			}
+			TRA_lebed_legacy = {
+				picture = TRA_lebed_legacy
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					army_org = 3
+					army_org_factor = 0.1
+					army_morale_factor = 0.1
+					military_development_monthly = 0.01
+				}
+			}
+			TRA_national_reconstruction_initiative = {
+				picture = TRA_national_reconstruction_initiative
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					production_speed_buildings_factor = 0.15
+					production_speed_infrastructure_factor = 0.15
+					production_speed_industrial_complex_factor = 0.15
+					consumer_goods_factor = -0.03
+					expense_growth_factor = 0.05
+					inflation_monthly = -0.002
+					society_development_monthly = 0.01
+					poverty_development_monthly = 0.01
+					industrial_development_monthly = 0.01
+					farming_development_monthly = 0.01
+				}
+			}
+			TRA_our_little_game = {
+				picture = TRA_our_little_game
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					decryption_factor = 0.25
+					encryption_factor = 0.25
+					intelligence_agency_defense = 0.15
+					enemy_operative_detection_chance = 5
+				}
+			}
+			TRA_police_expansion = {
+				picture = TRA_police_expansion
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					political_power_factor = 0.05
+					encryption_factor = 0.1
+					agency_upgrade_time = -0.1
+					training_time_factor = -0.1
+					required_garrison_factor = -0.25
+					resistance_activity = -0.25
+				}
+			}
+			TRA_pridnestrovian_truth = {
+				picture = TRA_pridnestrovian_truth
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					political_power_gain = 0.1
+					stability_factor = 0.1
+					war_support_factor = 0.1
+					drift_defence_factor = 0.15
+				}
+			}
+			TRA_safe_city = {
+				picture = TRA_safe_city
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					stability_factor = 0.1
+					intelligence_agency_defense = 0.25
+					crypto_strength = 1
+					operation_cost = -0.5
+					army_core_defence_factor = 0.1
+				}
+			}
+			TRA_the_only_empire_we_get = {
+				picture = TRA_the_only_empire_we_get
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				on_add = {
+					add_offsite_building = { type = arms_factory level = 1 }
+				}
+				on_remove = {
+					add_offsite_building = { type = arms_factory level = -1 }
+				}
+				modifier = {
+					political_power_gain = -0.05
+					consumer_goods_expected_value = 0.03
+					production_speed_buildings_factor = 0.1
+					global_building_slots = 1
+					industrial_capacity_factory = 0.1
+				}
+			}
+			TRA_black_swan_operation = {
+				picture = TRA_lebed_legacy
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				targeted_modifier = {
+					tag = UKR
+					attack_bonus_against = 0.05
+					defense_bonus_against = 0.05
+				}
+				
+				modifier = {
+					army_org_factor = 0.1
+					max_planning = 0.1
+					army_speed_factor = 0.05
+					army_org_regain = 0.1
+				}
+			}
+		}
+	}

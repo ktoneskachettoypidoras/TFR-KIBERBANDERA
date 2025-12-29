@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TRA_supreme_council_banner"
+		texturefile = "gfx/texticons/banners/decisions/TRA_supreme_council_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TRA_sheriff_banner"
+		texturefile = "gfx/texticons/banners/TRA/TRA_sheriff_banner.png"
+		legacy_lazy_load = no
+	}
+}

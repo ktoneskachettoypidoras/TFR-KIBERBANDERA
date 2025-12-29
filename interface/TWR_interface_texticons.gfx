@@ -1,0 +1,9 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_Sheriff_logo"
+		texturefile = "gfx/texticons/TRA/Sheriff.png"
+		legacy_lazy_load = no
+	}
+	
+}

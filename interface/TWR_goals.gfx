@@ -1,0 +1,312 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_focus_TRA_a_strict_talk"
+		texturefile = "gfx/interface/goals/TRA/TRA_a_strict_talk.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_cold_cold_winter"
+		texturefile = "gfx/interface/goals/TRA/TRA_cold_cold_winter.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_communication_in_the_country"
+		texturefile = "gfx/interface/goals/TRA/TRA_communication_in_the_country.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_communist_duty"
+		texturefile = "gfx/interface/goals/TRA/TRA_communist_duty.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_cossack_will"
+		texturefile = "gfx/interface/goals/TRA/TRA_cossack_will.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_cutting_ties"
+		texturefile = "gfx/interface/goals/TRA/TRA_cutting_ties.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_dealing_with_covid"
+		texturefile = "gfx/interface/goals/TRA/TRA_dealing_with_covid.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_desperate_calls"
+		texturefile = "gfx/interface/goals/TRA/TRA_desperate_calls.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_dreams_of_the_past"
+		texturefile = "gfx/interface/goals/TRA/TRA_dreams_of_the_past.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_economic_report"
+		texturefile = "gfx/interface/goals/TRA/TRA_economic_report.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_economical_decisions"
+		texturefile = "gfx/interface/goals/TRA/TRA_economical_decisions.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_communication_in_the_country"
+		texturefile = "gfx/interface/goals/TRA/TRA_communication_in_the_country.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_eternal_brotherhood"
+		texturefile = "gfx/interface/goals/TRA/TRA_eternal_brotherhood.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_eternal_fortress"
+		texturefile = "gfx/interface/goals/TRA/TRA_eternal_fortress.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_extended_authority"
+		texturefile = "gfx/interface/goals/TRA/TRA_extended_authority.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_fall_from_the_sky"
+		texturefile = "gfx/interface/goals/TRA/TRA_fall_from_the_sky.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_final_journey"
+		texturefile = "gfx/interface/goals/TRA/TRA_final_journey.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_guardian_legacy"
+		texturefile = "gfx/interface/goals/TRA/TRA_guardian_legacy.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_guardians_of_motherland"
+		texturefile = "gfx/interface/goals/TRA/TRA_guardians_of_motherland.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_guarding_sheriff"
+		texturefile = "gfx/interface/goals/TRA/TRA_guarding_sheriff.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_guns_for_citizens"
+		texturefile = "gfx/interface/goals/TRA/TRA_guns_for_citizens.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_he_who_made_us_strong"
+		texturefile = "gfx/interface/goals/TRA/TRA_he_who_made_us_strong.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_hidden_within"
+		texturefile = "gfx/interface/goals/TRA/TRA_hidden_within.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_imperial_splendor"
+		texturefile = "gfx/interface/goals/TRA/TRA_imperial_splendor.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_light_of_greatness"
+		texturefile = "gfx/interface/goals/TRA/TRA_light_of_greatness.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_marching_forever"
+		texturefile = "gfx/interface/goals/TRA/TRA_marching_forever.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_marching_on"
+		texturefile = "gfx/interface/goals/TRA/TRA_marching_on.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_national_protests"
+		texturefile = "gfx/interface/goals/TRA/TRA_national_protests.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_new_round_of_negotiations"
+		texturefile = "gfx/interface/goals/TRA/TRA_new_round_of_negotiations.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_officer_assembly"
+		texturefile = "gfx/interface/goals/TRA/TRA_officer_assembly.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_operation_black_swan"
+		texturefile = "gfx/interface/goals/TRA/TRA_operation_black_swan.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_our_final_referendum"
+		texturefile = "gfx/interface/goals/TRA/TRA_our_final_referendum.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_our_future_victories"
+		texturefile = "gfx/interface/goals/TRA/TRA_our_future_victories.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_our_leader"
+		texturefile = "gfx/interface/goals/TRA/TRA_our_leader.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_ready_to_fight"
+		texturefile = "gfx/interface/goals/TRA/TRA_ready_to_fight.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_reconstruction_initiative"
+		texturefile = "gfx/interface/goals/TRA/TRA_reconstruction_initiative.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_red_guard"
+		texturefile = "gfx/interface/goals/TRA/TRA_red_guard.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_sacred_oath"
+		texturefile = "gfx/interface/goals/TRA/TRA_sacred_oath.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_safe_city"
+		texturefile = "gfx/interface/goals/TRA/TRA_safe_city.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_scorpion_strike"
+		texturefile = "gfx/interface/goals/TRA/TRA_scorpion_strike.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_sheriff_expansion"
+		texturefile = "gfx/interface/goals/TRA/TRA_sheriff_expansion.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_slaves_of_god"
+		texturefile = "gfx/interface/goals/TRA/TRA_slaves_of_god.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_they_shall_hear_our_song"
+		texturefile = "gfx/interface/goals/TRA/TRA_they_shall_hear_our_song.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_ties_of_honor"
+		texturefile = "gfx/interface/goals/TRA/TRA_ties_of_honor.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_time_to_speak"
+		texturefile = "gfx/interface/goals/TRA/TRA_time_to_speak.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_unbreakable_ties"
+		texturefile = "gfx/interface/goals/TRA/TRA_unbreakable_ties.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_women_conscription"
+		texturefile = "gfx/interface/goals/TRA/TRA_women_conscription.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_welcome_external_investments"
+		texturefile = "gfx/interface/goals/TRA/TRA_welcome_external_investments.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_increase_tax_incentives"
+		texturefile = "gfx/interface/goals/TRA/TRA_increase_tax_incentives.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_buy_nistrenian_products"
+		texturefile = "gfx/interface/goals/TRA/TRA_buy_nistrenian_products.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_thirty_years_of_life"
+		texturefile = "gfx/interface/goals/TRA/TRA_thirty_years_of_life.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_he_who_saved_us_all"
+		texturefile = "gfx/interface/goals/TRA/TRA_he_who_saved_us_all.png"
+	}
+		
+	SpriteType = {
+		name = "GFX_focus_TRA_our_angel_protector"
+		texturefile = "gfx/interface/goals/TRA/TRA_our_angel_protector.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_our_political_renewal"
+		texturefile = "gfx/interface/goals/TRA/TRA_our_political_renewal.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_connection_with_our_homeland"
+		texturefile = "gfx/interface/goals/TRA/TRA_connection_with_our_homeland.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_the_stream_must_go_on"
+		texturefile = "gfx/interface/goals/TRA/TRA_the_stream_must_go_on.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_inspection_from_above"
+		texturefile = "gfx/interface/goals/TRA/TRA_inspection_from_above.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_returning_the_traitor"
+		texturefile = "gfx/interface/goals/TRA/TRA_returning_the_traitor.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_it_is_still_free"
+		texturefile = "gfx/interface/goals/TRA/TRA_it_is_still_free.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_eyes_of_justice"
+		texturefile = "gfx/interface/goals/TRA/TRA_eyes_of_justice.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_young_politicians"
+		texturefile = "gfx/interface/goals/TRA/TRA_young_politicians.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TRA_ecological_situation"
+		texturefile = "gfx/interface/goals/TRA/TRA_ecological_situation.png"
+	}
+	
+}

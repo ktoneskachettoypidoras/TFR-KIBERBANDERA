@@ -1,0 +1,14 @@
+
+	TRA_sheriff_support_dynamic = {
+	
+		enable = { 
+			tag = TRA
+			#NOT = {
+			#	has_completed_focus = SOV_nothing_but_bloodsucking_parasites
+			#}
+		}
+		
+		production_speed_buildings_factor = TRA_sheriff_support_dynamic_var
+		industrial_capacity_factory = TRA_sheriff_support_dynamic_var
+		consumer_goods_factor = TRA_sheriff_support_dynamic_var
+	}

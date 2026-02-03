@@ -63,8 +63,8 @@
  #
  ##Leader desc
  #SOV_VLADIMIR_PUTIN_DESC:0 "Владимир Владимирович Путин пробирался к власти не по типичной лестнице, ведущей к власти, а по тайным лестницам и закоулкам разведывательного сообщества. Он начал свою карьеру в рядах КГБ, проведя последнее десятилетие существования Советского Союза, помогая Штази в Восточной Германии. Когда Союз распался, он занялся политикой в недавно переименованном городе Санкт-Петербурге и увидел стремительный взлет во время правления Бориса Ельцина. Он получил поддержку Ельцина на выборах 2000 года и легко набрал большинство голосов. С тех пор он не покидал Кремль.На протяжении последних двух десятилетий Путин оставался у власти благодаря сочетанию народной поддержки, конституционных лазеек и тщательного контроля над оппозицией. Когда в 2008 году он достиг предела в два срока подряд, его бывший премьер-министр и близкий союзник Дмитрий Медведев был президентом на один срок, в то время как Путин сам стал премьер-министром. Затем Путин вернулся на президентский пост в 2012 году. За время своей администрации он пережил множество кризисов, от борьбы с чеченскими партизанами до поддержки пророссийских повстанческих государств на востоке Украины, и каждый раз выходил из них сильнее.\n\nНа значительная часть российской общественности искренне наслаждается правлением Путина, видя в нем человека, который вывел их из бурной эпохи Ельцина и помог восстановить положение России среди мировых держав. Но не вся его поддержка является органичной. Его последующие выборы сопровождались обвинениями в фальсификации результатов голосования, а антиправительственные протесты сопровождались жесткими репрессиями. Лидеры оппозиции внутри страны и за рубежом, как правило, подвергаются слежке, преследованиям, арестам или умирают при подозрительных обстоятельствах. Все это посылает один четкий сигнал: Владимир Путин считает, что у него есть народный мандат на правление, и он не планирует отказываться от него в ближайшее время."
- #
- ##Variables
+ UIA_HRYTSAK_DESC:0 “Hrytsak is the in quo leader of the Tryzurb military organisation, who recently took over the organisation claiming that the leaders are incompetent. He is only known for his paramilitary passion and strength, however most information is unknown or classified due to paranoia or his cunning nature.\nAccording to most people he is a true Ukrainian patriot, who only speaks in Ukrainian and curses those who speak Russian even though he is from south-eastern Ukraine. He can shoot, fight and command with exceptional skill.\nNickname Hrytsak grew to fame due to his skills of promoting partisan warfare against the Moscow shackles using the platform called Telegram posting videos and photos of so called actions and instructions to perform them.”
+##Variables
  #SOV_navalny_protest_strength: "Сила Протеста"
  #
  ##Flags
@@ -89,4 +89,5 @@
  #barkashov_1_stats_tp: "£GFX_attack_texticon §RНавык Атаки§!: §Y2§!\n£GFX_defence_texticon §YНавык Защиты§!: §Y1§!\n£GFX_planning_trait_texticon §GНавык Планирования§!: §Y2§!\n£GFX_logistics_texticon §CНавык Логистики§!: §Y2§!\n\n"
  #
  ##Sub-Sub Ideologies
+
  

@@ -1,0 +1,286 @@
+
+focus_tree = {
+    id = UIA_focus
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = UIA
+        }
+    }
+
+    default = no
+
+    # =========================
+    # TREE 1 — EXILE & RETURN
+    # =========================
+
+    focus = {
+        id = UIA_once_again
+        x = 6
+        y = 0
+        cost = 1
+        available = {
+            has_country_flag = uia_exile_government
+            NOT = { has_country_flag = uia_tree_1_complete }
+        }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_reform_oun_exile
+        x = 5
+        y = 1
+        cost = 1
+        prerequisite = { focus = UIA_once_again }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_heart_of_steel
+        x = 7
+        y = 1
+        cost = 1
+        prerequisite = { focus = UIA_once_again }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_take_control
+        x = 6
+        y = 2
+        cost = 1
+        prerequisite = {
+            focus = UIA_reform_oun_exile
+            focus = UIA_heart_of_steel
+        }
+        completion_reward = {
+            set_country_flag = uia_tree_1_complete
+        }
+        hide_completed_focus = yes
+    }
+
+    # =========================
+    # TREE 2 — OPERATION NALYVAYKO
+    # =========================
+
+    focus = {
+        id = UIA_operation_nalyvayko
+        x = 6
+        y = 4
+        cost = 1
+        available = {
+            has_country_flag = uia_tree_1_complete
+            NOT = { has_country_flag = uia_tree_2_complete }
+        }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_while_idlers_were_idling
+        x = 4
+        y = 5
+        cost = 1
+        prerequisite = { focus = UIA_operation_nalyvayko }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_activation_hidden_armories
+        x = 8
+        y = 5
+        cost = 1
+        prerequisite = { focus = UIA_operation_nalyvayko }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_we_can_repeat
+        x = 6
+        y = 6
+        cost = 1
+        prerequisite = { focus = UIA_while_idlers_were_idling }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_no_mercy_800_years
+        x = 8
+        y = 6
+        cost = 1
+        prerequisite = { focus = UIA_activation_hidden_armories }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_initiate_the_sich
+        x = 4
+        y = 6
+        cost = 1
+        prerequisite = { focus = UIA_while_idlers_were_idling }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_a_final_punishment
+        x = 6
+        y = 7
+        cost = 1
+        prerequisite = {
+            focus = UIA_we_can_repeat
+            focus = UIA_no_mercy_800_years
+        }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_she_has_not_fallen_yet
+        x = 6
+        y = 8
+        cost = 1
+        prerequisite = {
+            focus = UIA_initiate_the_sich
+            focus = UIA_a_final_punishment
+        }
+        completion_reward = {
+            set_country_flag = uia_tree_2_complete
+        }
+        hide_completed_focus = yes
+    }
+
+    # =========================
+    # TREE 3 — TOTAL WAR
+    # =========================
+
+    focus = {
+        id = UIA_declare_martial_law
+        x = 4
+        y = 10
+        cost = 1
+        available = {
+            has_country_flag = uia_tree_2_complete
+        }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_raise_our_insurgents
+        x = 8
+        y = 10
+        cost = 1
+        available = {
+            has_country_flag = uia_tree_2_complete
+        }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_contact_ns_wp
+        x = 3
+        y = 11
+        cost = 1
+        prerequisite = { focus = UIA_declare_martial_law }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_moscow_horde_relentless
+        x = 5
+        y = 11
+        cost = 1
+        prerequisite = { focus = UIA_declare_martial_law }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_nation_of_partisan_warfare
+        x = 8
+        y = 11
+        cost = 1
+        prerequisite = { focus = UIA_raise_our_insurgents }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_activation_sleeper_cells
+        x = 2
+        y = 12
+        cost = 1
+        prerequisite = { focus = UIA_contact_ns_wp }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_to_the_last_ukrainian
+        x = 4
+        y = 12
+        cost = 1
+        prerequisite = {
+            focus = UIA_contact_ns_wp
+            focus = UIA_moscow_horde_relentless
+        }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_spartan_cossacks
+        x = 6
+        y = 12
+        cost = 1
+        prerequisite = { focus = UIA_moscow_horde_relentless }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_operation_mosquito
+        x = 9
+        y = 12
+        cost = 1
+        prerequisite = { focus = UIA_nation_of_partisan_warfare }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_seven_days_of_terror
+        x = 3
+        y = 13
+        cost = 1
+        prerequisite = { focus = UIA_activation_sleeper_cells }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_moscow_how_much_do_your_golden_bells_cost
+        x = 5
+        y = 13
+        cost = 1
+        prerequisite = {
+            focus = UIA_to_the_last_ukrainian
+            focus = UIA_spartan_cossacks
+        }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_strike_the_kgb_command
+        x = 7
+        y = 13
+        cost = 1
+        prerequisite = { focus = UIA_spartan_cossacks }
+        completion_reward = {}
+    }
+
+    focus = {
+        id = UIA_victory_of_no_other
+        x = 5
+        y = 14
+        cost = 1
+        prerequisite = {
+            focus = UIA_seven_days_of_terror
+            focus = UIA_moscow_how_much_do_your_golden_bells_cost
+            focus = UIA_strike_the_kgb_command
+        }
+        completion_reward = {}
+        hide_completed_focus = yes
+    }
+}
